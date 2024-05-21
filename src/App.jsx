@@ -7,6 +7,8 @@ import Premiummembership from "./page/Premiummembership";
 import Paymentconfirmation from "./page/Paymentconfirmation";
 import Succes from "./page/Succes";
 import Failure from "./page/Failure";
+import Navbar from "./components/navbar";
+import Wallet from "./components/wallet";
 
 
 export default function App() {
@@ -20,6 +22,9 @@ export default function App() {
         <Route path="/Paymentconfirmation" element={<Paymentconfirmation />} />
         <Route path="/Succes" element={<Succes />} />
         <Route path="/Failure" element={<Failure />} />
+        <Route path="/navbar" element={<Navbar />} />
+        <Route path="/wallet" element={<Wallet />} />
+
       </Routes>
     </>
   );
