@@ -1,0 +1,15 @@
+.bgimage{
+    background-image: url('../../public/Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  right ;
+    border-radius:0 0 20px 20px;
+    
+}
+.bgsilver{
+    background-image: url('../../public/Group\ \(2\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  right ;
+    border-radius:0 0 20px 20px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, RouterProvider, Routes } from "react-router-dom";
 import "./App.css";
+import ServiceCustomer from "./page/ServiceCustomer";
 import HomePage from "./components/HomePage";
 import PackageDefault from "./page/PackageDefault";
 import Premiummembership from "./page/Premiummembership";
@@ -16,6 +17,7 @@ export default function App() {
     <>
       {/* <RouterProvider router={router}/> */}
       <Routes>
+        <Route path="/service" element={<ServiceCustomer/>} />
         <Route path="/" element={<HomePage />} />
         <Route path="/packageDefault" element={<PackageDefault />} />
         <Route path="/premiummembership" element={<Premiummembership />} />
@@ -24,7 +26,6 @@ export default function App() {
         <Route path="/Failure" element={<Failure />} />
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/wallet" element={<Wallet />} />
-
       </Routes>
     </>
   );
