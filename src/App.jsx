@@ -8,7 +8,6 @@ export default function App() {
     <>
       {/* <RouterProvider router={router}/> */}
       <Routes>
-        <Route path="/" element={<HomePage/>} />
         <Route path="/service" element={<ServiceCustomer/>} />
       </Routes>
     </>
