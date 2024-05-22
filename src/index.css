@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 * {
-    font-family: "Cabin", sans-serif;
+    font-family: "sans-serif", sans-serif;
     border: 0;
     padding: 0;
     box-sizing: border-box;
