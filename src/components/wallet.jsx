@@ -8,8 +8,8 @@ import { RxCountdownTimer } from 'react-icons/rx'
 
 export default function wallet() {
     return (
-        <div className='w-[18%]'>
-           <div className='ml-3'>
+        <div className='w-[18%] ml-[30px] border-l-2 border-solid border-[#e4e6e8] '>
+           <div className='ml-7'>
                 <div className='flex'>
                     <h2 className='font-bold text-[16px]'>TOMXU</h2>
                     <img className='w-[20px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSSx0z5kB-8FREEzunMxrzXcbaqKm4S0th1ZsMJetS-w&s" alt="" />
@@ -43,9 +43,9 @@ export default function wallet() {
            </div>
 
            {/* <hr className='mt-8 text-[#A1A1A1]' /> */}
-           <p className='w-full h-[1px] bg-[#A1A1A1] mt-6'></p>
+           <p className='w-full h-[1px] bg-[#A1A1A1] mt-6 ml-5'></p>
 
-            <div className='mt-6'>
+            <div className='mt-6 ml-8'>
                 <div className='flex items-center gap-5 border-2 border-solid border-[#A1A1A1] rounded-3xl p-2 cursor-pointer'>
                     <RxCountdownTimer className='text-[#0F1419] ml-2 ' size={18} />
                     <button className='text-[20px] rounded-[40px] text-[#0F1419] font-serif'>Lịch sử giao dịch</button>
