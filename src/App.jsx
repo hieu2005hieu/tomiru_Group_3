@@ -9,7 +9,11 @@ import Succes from "./page/Succes";
 import Failure from "./page/Failure";
 import Navbar from "./components/navbar";
 import Wallet from "./components/wallet";
+
 import Message from "./page/Message";
+=======
+import UpdatePage from "./page/UpdatePage";
+
 
 
 export default function App() {
@@ -18,6 +22,7 @@ export default function App() {
       {/* <RouterProvider router={router}/> */} 
 
       <Routes>
+
       <Route
           path="/"
           element={
@@ -34,6 +39,17 @@ export default function App() {
             <Route path="failure" element={<Failure />} />
         </Route>
             <Route path = "message" element={<Message />}></Route>
+
+        <Route path="/service" element={<ServiceCustomer />} />
+        <Route path="/packageDefault" element={<PackageDefault />} />
+        <Route path="/premiummembership" element={<Premiummembership />} />
+        <Route path="/Paymentconfirmation" element={<Paymentconfirmation />} />
+        <Route path="/Succes" element={<Succes />} />
+        <Route path="/Failure" element={<Failure />} />
+        <Route path="/navbar" element={<Navbar />} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/upgrade" element={<UpdatePage />} />
+
       </Routes>
     </>
   );
