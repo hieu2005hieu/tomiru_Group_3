@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Premiummembership() {
   return (
     <>
-      <div className="w-[500px] mx-auto flex justify-center align-center  shadow p-[20px] rounded-3xl mt-[70px]">
+      <div className="w-[480px] ml-10  flex justify-center h-[530px] border-2 border-solid border-[#dedfe2]  shadow p-[20px] rounded-3xl mt-[70px] ">
         <div className="text-center mt-[20px]">
           <h2 className="text-3xl font-bold">GÓI THÀNH VIÊN CAO CẤP</h2>
           <div className="mt-[20px] w-[260px]  mx-auto text-2xl bg-[#F0C428] rounded-3xl font-medium ">
@@ -30,12 +31,18 @@ export default function Premiummembership() {
             <li className="mt-[10px]">Các dịch vụ khác trong tương lai</li>
           </div>
           <div className="mt-[30px] flex justify-center align-center gap-3 mb-7">
-            <button className="text-black bg-[#ffffff] border border-solid border-black-500 p-[20px] font-bold py-2 px-4 rounded-3xl mt-6 w-[150px] pl-[20px] pr-[20px] ">
-              QUAY LẠI
-            </button>
-            <button className="text-black bg-[#FFD24A] hover:bg-[#f9d874] font-bold py-2 px-4 rounded-3xl mt-6 w-[150px] pl-[20px] pr-[20px]">
-              MUA GÓI
-            </button>
+            <NavLink to='/packageDefault'>
+              <button className="text-black bg-[#ffffff] border border-solid border-black-500 p-[20px] font-bold py-2 px-4 rounded-3xl mt-6 w-[150px] pl-[20px] pr-[20px] ">
+                QUAY LẠI
+              </button>
+            </NavLink>
+
+            <NavLink to='/paymentconfirmation'>
+              <button className="text-black bg-[#FFD24A] hover:bg-[#f9d874] font-bold py-2 px-4 rounded-3xl mt-6 w-[150px] pl-[20px] pr-[20px]">
+                MUA GÓI
+              </button>
+            </NavLink>
+            
           </div>
         </div>
       </div>

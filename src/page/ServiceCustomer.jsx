@@ -2,10 +2,12 @@ import React from "react";
 import { MdArrowBackIos } from "react-icons/md";
 import { IoCheckmark } from "react-icons/io5";
 import "../utils/Background.css";
+import { NavLink } from "react-router-dom";
 export default function ServiceCustomer() {
   return (
     <>
-      <div className="flex items-center justify-center pt-[30px]">
+    <div className="ml-9 w-[484px] ">
+      <div className="flex items-center pl-7 pt-[50px]">
         <MdArrowBackIos />
         <p className="font-bold text-2xl pl-4">Mua gói sử dụng dịch vụ </p>
       </div>
@@ -47,9 +49,12 @@ export default function ServiceCustomer() {
               </div>
              
             </div>
-            <button className="bgimage mt-4 w-[140px] rounded-2xl font-bold">
-              Mua ngay
-            </button>
+            <NavLink to="/packageDefault">
+                <button className="bgimage mt-4 w-[140px] rounded-2xl font-bold">
+                  Mua ngay
+                </button>
+            </NavLink>
+           
           </div>
 
           <div className=" rounded-lg h-[320px] w-[220px] text-center leading-[35px] border-[4px] border-solid border-[#D3D3D3] ">
@@ -88,13 +93,18 @@ export default function ServiceCustomer() {
               </div>
              
             </div>
-            <button className="bgsilver mt-4 w-[140px] rounded-2xl font-bold">
-              Mua ngay
-            </button>
+            <NavLink to='/packageDefault'>
+                <button className="bgsilver mt-4 w-[140px] rounded-2xl font-bold">
+                  Mua ngay
+                </button>
+            </NavLink>
+            
           </div>
           
         </div>
       </div>
+    </div>
+
     </>
   );
 }
